@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bobo的主页</title>
+	<link href="css/icon/favICO.ico" rel="shortcut icon" />
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="Font-Awesome-master/css/font-awesome.min.css">
+	<script type="text/javascript" src = "js/script.js"></script>
+</head>
+<body>
+	
+	<!-- 导航与LOGO -->
+	<header id="header" class="">
+		<nav id="logo">张小波</nav>
+		
+		<input id="position-home" type="radio" name="position" checked="true">
+		<a href="#section-home">首页</a>
+
+		<input id="position-info" type="radio" name="position">
+		<a href="#section-info">简介</a>
+
+		<input id="position-hobby" type="radio" name="position">
+		<a href="#section-hobby">爱好</a>
+
+		<input id="position-contact" type="radio" name="position">
+		<a href="#section-contact">联系我</a>
+	</header>
+	
+	<!-- 正文部分 -->
+	<div id="content">
+		
+		<input type="radio" class="animation" id="animation-home" name="animation" checked="true">
+		<input type="radio" class="animation" id="animation-contact" name="animation">
+
+		<!-- LOGO与签名 -->
+		<section id="section-home">
+			
+			<div id="inner">
+				<div class="borderline" id="line-top"></div>
+				<div class="borderline" id="line-bottom"></div>
+				<h1>张小波</h1>
+				<p>没关系 我已经决定吃自己喜欢的东西 过短暂的人生了</p>
+				<button onclick="detailme()">了解我</button>
+			</div>
+		</section>
+		
+		<!-- 头像与基本信息 -->
+		<section id="section-info">
+			
+			<!-- 头像 -->
+			<div id="photo"></div>
+
+			<h1>张战波</h1>
+			<p>一九九五年九月出生于安徽蚌埠，现就读于合肥师范学院，专业物联网工程。精通C语言、C++、Java、Android开发等。可以熟练使用MySQL、SqlServer等数据库。对PHP、HTML、JavaScript、CSS也有一定的了解。</p>
+
+			<div class="Grid">
+
+				<div class="grid-form" id="grig-C">
+					<nav class="logo"></nav>
+					<p id="c">大一时开始学习C语言、数据结构。开发过一个简单的带文件系统的图书管理系统。（点击查看我的C语言项目）</p>
+				</div>
+
+				<div class="grid-form" id="grig-Java">
+					<nav class="logo"></nav>
+					<p id="java">大二时便开始自己学习Java。熟悉Java多线程、线程通信、网络通信、各种数据流的区别和使用。（点击查看我的Java项目）</p>
+
+				</div>
+
+				<div class="grid-form" id="grig-Android">
+					<nav class="logo"></nav>
+					<p id="android">学习Java两个月后，便开始接触Android。目前对多线程、网络、异步操作、高级UI、自定义组件都很了解。（点击看我的安卓项目）</p>
+				</div>
+
+				<div class="grid-form" id="grig-Html">
+					<nav class="logo"></nav>
+					<p id="html">知道网页的基本架构。熟悉CSS动画，和多浏览器支持。可以用JavaScript做交互。（点击查看我的HTML项目）</p>
+				</div>
+
+				<div class="grid-form" id="grig-JS">
+					<nav class="logo"></nav>
+					<p>可以使用JavaScript给网页做交互。熟悉AJAX技术、DOM。可以做一些CSS无法做到的网页动态特效。</p>
+				</div>
+
+				<div class="grid-form" id="grig-PHP">
+					<nav class="logo"></nav>
+					<p>可以使用PHP给网页做后台交互。熟悉PHP基本语法，知道如何连接数据库。</p>
+				</div>
+
+			</div>
+		</section>
+	
+		<!-- 个人爱好与休闲 -->
+		<section id="section-hobby">
+			
+			<div class="hobby" id="hobby-game">
+
+				<div class="photo" id="game-photo">
+					<img src="css/icon/MC.png" alt="">
+				</div>
+
+				<div class="text" id="game-text">
+					<h2>我爱的游戏</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, amet enim, nostrum id fugit ipsam consequatur quasi aliquam. Voluptatibus unde officia ut alias saepe aperiam molestiae? Facilis inventore reiciendis quae!</p>
+				</div>
+			</div>
+
+			<div class="hobby" id="hobby-excise">
+
+				<div class="text" id="excise-text">
+					<h2>我爱的动漫</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum delectus nesciunt, provident labore expedita quam saepe maxime repellat, explicabo, enim ipsum tenetur animi sequi. Provident quidem voluptatem, obcaecati placeat excepturi.</p>
+				</div>
+
+				<div class="photo" id="excise-photo">
+					<img src="css/icon/Gintama.png" alt="">
+				</div>
+
+			</div>
+
+			<div class="hobby" id="hobby-movie">
+
+				<div class="photo" id="movie-photo">
+					<img src="css/icon/KillBill.png" alt="">
+				</div>
+
+				<div class="text" id="movie-text">
+					<h2>我爱的电影</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quaerat, alias debitis unde ab hic, sequi vero veritatis tempora ipsam ut, dolore praesentium dolorem delectus cupiditate. Deserunt iure accusantium dolor?</p>
+				</div>
+			</div>
+
+			<div class="hobby" id="hobby-music">
+
+				<div class="text" id="music-text">
+					<h2>我爱的音乐</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veritatis, eum eos sed nulla illo itaque numquam adipisci, vitae dolore, vero, ab similique. Maxime, magnam, alias? Eum enim, soluta ab.</p>
+				</div>
+
+				<div class="photo" id="music-photo">
+					<img src="css/icon/jay.png" alt="">
+				</div>
+				
+			</div>
+		</section>
+	
+		<!-- 联系方式 -->
+		<section id="section-contact">
+
+			<div id="contact-title">
+				<h2>毕业狗 求工作</h2>
+				<div id="hr"></div>
+				<p>如果您有合适的工作机会 或者对我感兴趣 请联系我</p>
+			</div>
+
+			<div id="contact-way">
+				<div class="way" id="contact-phone"></div>
+				<div class="way" id="contact-mail"></div>
+				<div class="way" id="contact-qq"></div>
+			</div>
+			
+			<div id="contact-text">
+
+				<div id="phonenumber">
+					<h2>PHONE</h2>
+					<p>130 9545 1128</p>
+				</div>
+
+				<div id="mailaddress">
+					<h2>MAIL</h2>
+					<p>bobohezi@outlook.com</p>
+				</div>
+
+				<div id="qqnumber">
+					<h2>QQ</h2>
+					<p>1784720332</p>
+				</div>
+
+			</div>
+		</section>
+	</div>
+	
+	<!-- 页脚 -->
+	<footer id="foot">
+		
+		<nav id="support">
+			<img id="support-link" src="css/icon/alicloud.png">
+			<p>阿里云提供支持</p>
+		</nav>
+
+		<div class="pageinfo">
+			<i class="fa fa-flag"></i>
+			<p>Bobo`s Personal Page·作者:Bobo Xiao</p>
+		</div>
+
+	</footer>
+</body>
+</html>

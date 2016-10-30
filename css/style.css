@@ -1,0 +1,606 @@
+h1,p,div{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	width: 100%;
+	min-height: 60px;
+	background-color: rgba(0,0,0,0.8);
+	position: fixed;
+	z-index: 1000;
+}
+
+header #logo{
+	font-size: 25px;
+	font-weight: 900;
+	float: left;
+	line-height: 60px;
+	letter-spacing: 2px;
+	padding-left: 20px;
+	color: #fff;
+	cursor: pointer;
+}
+
+header > input,
+header > a{
+	width: 100px;
+	height: 60px;
+	line-height: 80px;
+	position: fixed;
+	top: 0;
+	right: 360px;
+	cursor: pointer;
+}
+
+header > input{
+	opacity: 0;/*设置Radio透明度为0*/
+	z-index: 1000;/*设置input的优先级为1000*/
+}
+
+header > a{
+	z-index: 10;/*设置a的优先级为10*/
+	font-weight: 700;/*设置字体加粗7倍*/
+	font-size: 16px;
+	text-align: center;/*字体居住*/
+	color: #fff;
+	text-decoration: none;
+}
+
+#position-info,#position-info + a{
+	right: 240px;
+}
+
+#position-hobby,#position-hobby + a{
+	right: 120px;
+}
+
+#position-contact,#position-contact + a{
+	right: 0;
+}
+
+#header input:checked + a:after{
+	content: "";
+	width: 100px;
+	height: 5px;
+	background: #fff;
+	position: absolute;
+	bottom: 0;
+	margin-left: -66px;
+}
+
+
+
+
+/* 首页 */
+
+#section-home{
+	height: 650px;
+	position: relative;
+	background: rgba(0,0,0,0.3);
+}
+
+#section-home #inner{
+	max-width: 300px;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	top: 150px;
+}
+
+#section-home #inner h1{
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	text-align: center;
+	line-height: 100px;
+	position: absolute;
+	left: 50%;
+    margin-left: -50px;
+	color: #fff;
+}
+
+#section-home p{
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin: 30px 0 30px 0;
+	line-height: 30px;
+	position: relative;
+    top: 100px;
+}
+
+.borderline{
+	width: 300px;
+	height: 5px;
+	background: #222;
+}
+
+#line-top{
+	position: relative;
+	top: 5px;
+}
+
+#line-bottom{
+	position: relative;
+	top: 105px;
+	float: right;
+}
+
+
+button{
+	border:none;
+	background: #004571;
+	color: #eee;
+	font-size: 15px;
+	margin: 20px;
+	padding: 14px 20px;
+	color: black;
+	font-weight: 700;
+	position: relative;
+	top: 100px;
+}
+
+#animation-home:checked ~ #section-home #inner #line-top,
+#animation-home:checked ~ #section-home #inner #line-bottom{
+	-webkit-animation: brederanimation 0.8s ease-in-out 0.2s backwards;
+	-moz-animation: brederanimation 0.8s ease-in-out 0.2s backwards;
+	-ms-animation: brederanimation 0.8s ease-in-out 0.2s backwards;
+	-o-animation: brederanimation 0.8s ease-in-out 0.2s backwards;
+	animation: brederanimation 0.8s ease-in-out 0.2s backwards;
+}
+
+@-webkit-keyframes brederanimation{
+	from{
+		width: 0;
+	}
+	to{
+		width: 300px;
+	}
+}
+
+@-moz-keyframes brederanimation{
+	from{
+		width: 0;
+	}
+	to{
+		width: 300px;
+	}
+}
+
+@-o-keyframes brederanimation{
+	from{
+		width: 0;
+	}
+	to{
+		width: 300px;
+	}
+}
+
+@keyframes brederanimation{
+	from{
+		width: 0;
+	}
+	to{
+		width: 300px;
+	}
+}
+
+
+
+
+/* 简介 */
+
+#section-info{
+	
+	background: #355965;
+	padding-bottom: 60px;
+	margin: 0;
+}
+
+#section-info #photo{
+  	position: relative;
+  	width: 240px;
+  	height: 240px;
+  	top: 100px;
+  	left: 190px;
+  	background-size: 240px 240px;
+	background-image: url(icon/photo.jpg);
+	border-radius: 50%;
+}
+
+#section-info h1 {
+  	font-size: 36px;
+	color: #000;
+	font-weight: 900;
+  	text-align: center;
+  	letter-spacing: 2px;
+  	position: relative;
+  	top: -130px;
+  	left: 460px;
+  	display: inline;
+}
+
+#section-info p {
+	max-width: 500px;
+  	font-size: 24px;
+	color: #000;
+	letter-spacing: 1px;
+  	line-height: 1.25;
+  	text-align: left;
+  	position: relative;
+  	top: -90px;
+  	left: 460px;
+}
+
+#section-info .Grid{
+	position: relative;
+	width: 960px;
+  	height: 900px;
+  	margin: 0 auto;
+	color: #fff;
+}
+
+#section-info .Grid .grid-form{
+	width: 480px;
+	height: 300px;
+	float: left;
+}
+
+#section-info .Grid .grid-form nav{
+	cursor: pointer;
+}
+
+#section-info .Grid #grig-C{
+	background-color: rgba(0,0,0,0.05);
+}
+
+#section-info .Grid #grig-Java{
+	background-color: rgba(0,0,0,0.1);
+}
+
+#section-info .Grid #grig-Android{
+	background-color: rgba(0,0,0,0.15);
+}
+
+#section-info .Grid #grig-Html{
+	background-color: rgba(0,0,0,0.2);
+}
+
+#section-info .Grid #grig-JS{
+	background-color: rgba(0,0,0,0.25);
+}
+
+#section-info .Grid #grig-PHP{
+	background-color: rgba(0,0,0,0.3);
+}
+
+#section-info .Grid .grid-form nav{
+  	position: relative;
+  	width: 80px;
+  	height: 90px;
+  	background-size: 80px 90px;
+  	margin: 0 auto;
+}
+
+#section-info .Grid #grig-C nav{
+	background-image: url(icon/C.png);
+}
+
+#section-info .Grid #grig-Java nav{
+	background-image: url(icon/java.png);
+}
+
+#section-info .Grid #grig-Android nav{
+	background-image: url(icon/Android.png);
+}
+
+#section-info .Grid #grig-Html nav{
+	background-image: url(icon/html.png);
+}
+
+#section-info .Grid #grig-JS nav{
+	background-image: url(icon/javascript.png);
+}
+
+#section-info .Grid #grig-PHP nav{
+	background-image: url(icon/PHP.png);
+}
+
+#section-info .Grid .grid-form p{
+	position: relative;
+	left: 0;
+	top: 10px;
+	padding:0 20px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+
+/* 爱好 */
+
+#section-hobby{
+	background: #252f34;
+	color: #fff;
+	font-size: 0;
+}
+
+.hobby > div{
+	float: left;
+}
+
+#section-hobby .photo{
+	width: 45%;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.photo img{
+	width: 100%;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+#section-hobby .text{
+	max-width: 55%;
+	position: relative;
+	left: 50px;
+}
+
+.hobby:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.text h2{
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+
+.text p{
+	font-size: 18px;
+	letter-spacing: 1px;
+	max-width: 90%;
+}
+
+.hobby:nth-child(odd){
+	background-color: rgba(255,255,255,0.05);
+}
+
+
+
+/* 联系我 */
+
+#section-contact{
+	background: #089db0;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	color: #fff;
+}
+
+#section-contact #contact-title{
+	text-align: center;
+	margin: 0 auto;
+}
+
+#section-contact #contact-title h2{
+	font-size: 50px;
+	margin: 0;
+	padding: 30px;
+}
+
+#section-contact #contact-title p{
+	font-size: 25px;
+	letter-spacing: 2px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+#section-contact #contact-title #hr{
+	width: 800px;
+	height: 1px;
+	background:#064e63;
+	margin: 0 auto;
+}
+
+#section-contact #contact-way{
+	position: relative;
+	left: 50%;
+	margin: 80px auto 0 -425px;
+	height: 150px;
+}
+
+#section-contact #contact-way .way{
+	position: relative;
+	margin-right: 200px;
+	float: left;
+	width: 150px;
+	height: 150px;
+	background: #08708e;
+	box-shadow: 3px -3px 3px rgba(0,0,0,0.5);
+
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+#section-contact #contact-way #contact-phone{
+	background-image: url(icon/phone.png);
+	background-size: 100px 100px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#section-contact #contact-way #contact-mail{
+	background-image: url(icon/mail.png);
+	background-size: 100px 100px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#section-contact #contact-way #contact-qq{
+	background-image: url(icon/qq.png);
+	background-size: 100px 100px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#animation-contact:checked ~ #section-contact #contact-way #contact-phone{
+	-webkit-animation: showcard 0.6s ease-in-out 0s backwards;
+	-moz-animation: showcard 0.6s ease-in-out 0s backwards;
+	-o-animation: showcard 0.6s ease-in-out 0s backwards;
+	animation: showcard 0.6s ease-in-out 0s backwards;
+}
+
+#animation-contact:checked ~ #section-contact #contact-way #contact-mail{
+	-webkit-animation: showcard 0.6s ease-in-out 0.2s backwards;
+	-moz-animation: showcard 0.6s ease-in-out 0.2s backwards;
+	-o-animation: showcard 0.6s ease-in-out 0.2s backwards;
+	animation: showcard 0.6s ease-in-out 0.2s backwards;
+}
+
+#animation-contact:checked ~ #section-contact #contact-way #contact-qq{
+	-webkit-animation: showcard 0.6s ease-in-out 0.4s backwards;
+	-moz-animation: showcard 0.6s ease-in-out 0.4s backwards;
+	-o-animation: showcard 0.6s ease-in-out 0.4s backwards;
+	animation: showcard 0.6s ease-in-out 0.4s backwards;
+}
+
+@-webkit-keyframes showcard {
+	from
+	{
+		transform: scale(0.5) rotate(45deg);
+		opacity: 0;
+	}
+	to{
+		transform: scale(1) rotate(45deg);
+		opacity: 1;
+	}
+}
+@-o-keyframes showcard {
+	from
+	{
+		transform: scale(0.5) rotate(45deg);
+		opacity: 0;
+	}
+	to{
+		transform: scale(1) rotate(45deg);
+		opacity: 1;
+	}
+}
+@-moz-keyframes showcard {
+	from
+	{
+		transform: scale(0.5) rotate(45deg);
+		opacity: 0;
+	}
+	to{
+		transform: scale(1) rotate(45deg);
+		opacity: 1;
+	}
+}
+@keyframes showcard {
+	from
+	{
+		transform: scale(0.5) rotate(45deg);
+		opacity: 0;
+	}
+	to{
+		transform: scale(1) rotate(45deg);
+		opacity: 1;
+	}
+}
+
+#section-contact #contact-text{
+	position: relative;
+	left: 50%;
+	margin: 30px 0 0 -480px;
+	display: inline-table;
+}
+
+#section-contact #contact-text div{
+	float: left;
+	margin-right: 105px;
+	width: 250px;
+	text-align: center;
+	color: #000;
+	letter-spacing: 1px;
+}
+
+#section-contact #contact-text div p{
+	font-size: 20px;
+	font-weight: 900;
+}
+
+
+/* 页脚 */
+
+footer{
+	height: 185px;
+	background: #16394e;
+	color: #0b192d;
+}
+
+
+footer #support{
+	text-align: center;
+	position: relative;
+	top: 30px;
+	font-size: 20px;
+	font-weight: 900;
+	letter-spacing: 2px;
+}
+
+footer #support img{
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+}
+
+footer #support p{
+	width: 180px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+footer .pageinfo{
+	max-width: 350px;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	top: 60px;
+}
+
+footer .pageinfo i{
+	font-size: 20px;
+	float: left;
+}
+
+footer .pageinfo p{
+	font-weight: 900;
+}
+
+
+
+
+/* 背景图片 */
+body{
+	background: #444 url(icon/banner.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	overflow-x: hidden;
+}
+
+.animation{
+	position: fixed;
+	opacity: 0;
+}
